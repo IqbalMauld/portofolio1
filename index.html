@@ -2,183 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">https://bolkuss2003.000webhostapp.com/#
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="assest/css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-logo">IQBAL <span>MAULANA</span></div>
-        <div class="navbar-nav">
-            <a href="home">Home</a>
-            <a href="home">About Me</a>
-            <a href="home">My Project</a>
-            <a href="home">Contact</a>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar">
+          <div class="extra">
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+            <div class="nav-logo">
+                <h1><span>I</span>qbal<span>M</span>aulana</h1>
+            </div>
+            <div class="nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#project">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+    </nav>
+</header>
+<!-- Header End -->
+
+<!-- Hero Start -->
+ <section class="hero" id="hero">
+    <main>
+        <div class="left">
+            <h4>Hallo, I'm</h4>
+            <h1>Iqbal Maulana</h1>
+            <h2 class="text"></h2>
+            <a href="#">Download CV</a>
         </div>
-        <div class="navbar-extra">
-            <a href="https://www.facebook.com/profile.php?id=100014563156318" id="facebook"><i data-feather="facebook"></i></a>
-            <a href="#"><i data-feather="twitter"></i></a>
-            <a href="#"><i data-feather="instagram"></i></a>
-            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        <div class="right">
+          <img src="assest/img/profile.png" alt="imageloading" id="profile">
         </div>
+    </main>
+ </section>
+<!-- Hero End -->
+
+<!-- About start -->
+<section class="about" id="about">
+  <main>
+    <div class="image">
+      <img src="assest/img/profile.png" alt="">
     </div>
+    <div class="tentang">
+      <h1>About<span>Me</span></h1>
+      <p>Hi! I’m Iqbal Maulana, a passionate web developer with a keen eye for design and a love for crafting seamless user experiences. With 2 years of experience in front-end and back-end development, I specialize in creating responsive, user-friendly websites that not only look great but also perform exceptionally.
 
-    <style>
-
-:root{
-    --primary: #1018b1;
-    --bg: #010101;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: sans-serif;
-    background-color: var(--bg);
-    color: #fff;
-}
-
-/* NAVBAR */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 7%;
-    background-color: rgba(1, 1, 1, 0.8);
-    border-bottom: 1px solid var(--primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-}
-
-.navbar-logo{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    font-style: italic;
-}
-.navbar-logo span{
-    color: var(--primary);
-}
-.navbar-nav a{
-    color: #fff;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    margin: 0 1rem;
-}
-.navbar-nav a:hover{
-    color: red;
-}
-
-.navbar-nav a::after{
-    content: '';
-    display: block;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid red;
-    transform: scaleX(0);
-}
-.navbar-nav a:hover::after{
-    transform: scaleX(0.5);
-}
-.navbar .navbar-extra a{
-    color: #fff;
-    margin: 0 0.5rem;
-}
-.navbar .navbar-extra a:hover{
-    color: var(--primary);
-}
-
-#menu{
-    display: none;
-}
-.navbar-extra span{
-    display: none;
-}
-.navbar-extra a span:hover{
-    display: inline-block;
-}
+      I have a strong foundation in HTML, CSS, and JavaScript, and I'm proficient in frameworks such as React and Angular. On the back-end, I work with Node.js and Express, along with databases like MongoDB and SQL.</p>
+    </div>
+  </main>
+</section>
 
 
+<!-- About End -->
 
-/* media queries */
-/* Laptop */
-@media (max-width:1366px){
-    html{
-        font-size: 80%;
-    }
-}
-/* Tablet */
-@media (max-width:768px){
-    html{
-        font-size: 62.5%;
-    }
-    #menu{
-        display: inline-block;
-    }
-   .navbar-nav{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: var(--primary);
-    width: 30rem;
-    height: 100vh;
-    transition: 0.5s;
-   }
-   .navbar .navbar-nav.active{
-    right: 0;
-   }
-   .navbar-nav a{
-    color: #fff;
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-   }
-   .navbar-nav a::after{
-    transform-origin: 0 0;
-   }
-   .navbar-nav a:hover::after{
-    transform: scaleX(0.2);
-   }
-}
-/* Phone */
-@media (max-width:450px){
-    html{
-        font-size: 53%;
-    }
-}
+<section class="project" id="project">
+  <h1>Services</h1>
+<main>
+  <div>
+    <i class="feather" data-feather="box"></i>
+    <h1>Game</h1>
+    <h1>Development</h1>
+    <p>As a game developer, I am passionate about creating engaging and immersive experiences that captivate players. My work spans various aspects of game design and development, from conceptualization to deployment.</p>
+  </div>
+  <div>
+    <i data-feather="layout"></i>
+    <h1>Frontend</h1>
+    <h1>Development</h1>
+    <p>As a front-end developer, I specialize in creating visually appealing and user-friendly interfaces that enhance the overall user experience. My expertise lies in translating design concepts into functional and interactive web applications using a combination of modern technologies.</p>
+  </div>
+  <div>
+    <i data-feather="eye-off"></i>
+    <h1>Backend</h1>
+    <h1>Development</h1>
+    <p>As a back-end developer, I focus on building the server-side logic and database management that power web applications. My role involves creating robust, scalable, and efficient systems that ensure seamless data processing and storage.</p>
+  </div>
+</main>
+</section>
+<section class="kontak" id="contact">
+  <h1>Contact <span>Me</span></h1>
+  <main>
+    <div class="kiri">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone Number">
+    </div>
+    <div class="kanan">
+      <input type="text" id="pesan" placeholder="your message"> <br>
+      <button type="submit">Send Message</button>
 
-    </style>
+    </div>
+  </main>
+</section>
+<script>
+    feather.replace();
+  </script>
 
-    <script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script> <!-- Tambahkan ini -->
 
-const navbarNav = document.querySelector('.navbar-nav');
-document.querySelector('#menu').onclick = () => {
-    navbarNav.classList.toggle('active');
-};
-
-    </script>
-    
-    <script>
-        feather.replace()
-        </script>
-        <!-- my javascript -->
-      <script src="js/main.js">
-
-      </script>
+  
+<!-- My javascript -->
+    <script src="assest/js/script.js"></script>
 </body>
 </html>
